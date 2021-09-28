@@ -13,7 +13,6 @@ import lombok.ToString;
 public class JoinForm {
 
     private String userName;
-
     private String pwd;
 
     public User toEntity(){

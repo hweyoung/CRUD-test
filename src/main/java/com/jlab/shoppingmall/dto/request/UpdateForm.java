@@ -13,13 +13,6 @@ import lombok.ToString;
 public class UpdateForm {
 
     private String userName;
-
     private String pwd;
 
-    public User toEntity(){
-        return User.builder()
-                .userName(userName)
-                .pwd(pwd)
-                .build();
-    }
 }

@@ -1,10 +1,8 @@
 package com.jlab.shoppingmall.controller;
 
 import com.jlab.shoppingmall.domain.User;
-import com.jlab.shoppingmall.domain.UserRepository;
 import com.jlab.shoppingmall.dto.request.JoinForm;
 import com.jlab.shoppingmall.dto.request.UpdateForm;
-import com.jlab.shoppingmall.dto.response.UserResponseDTO;
 import com.jlab.shoppingmall.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;

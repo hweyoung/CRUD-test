@@ -16,6 +16,7 @@ public class UserService {
     @Autowired
     private UserRepository userRepository;
 
+
     public User getUser(Long id){
         User user = userRepository.findById(id)
                 .orElseThrow(()->new IllegalArgumentException("찾는 유저가 없습니다."));
@@ -33,7 +34,9 @@ public class UserService {
     public Long updateUser(Long id, UpdateForm updateForm){
         User user = userRepository.findById(id)
                 .orElseThrow(()->new IllegalArgumentException("찾는 유저가 없습니다."));
+
         user.update(updateForm.getUserName(), updateForm.getPwd());
+
         return user.getId();
     }
 
